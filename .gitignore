@@ -1,0 +1,4 @@
+#Ignore Node Modules
+node_modules
+#Ignore Reverse inde.bak
+stage/reverse/inde.bak
