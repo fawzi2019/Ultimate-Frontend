@@ -36,7 +36,7 @@ gulp.task('html', function () {
 gulp.task('scss', function () {
   return gulp.src(['stage/css/**/*.css', 'stage/css/**/*.scss'])
        .pipe(sourcemaps.init())
-  		 .pipe(sass(/*{outputStyle: 'compressed'}*/).on('error', sass.logError))
+  		 .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
   		 .pipe(prefix('last 2 versions'))
   		 .pipe(concat('main.css'))
        .pipe(sourcemaps.write('.'))
