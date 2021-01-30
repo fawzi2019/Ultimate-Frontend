@@ -22,6 +22,11 @@ $(function() {
         closeFullscreen();
       }
     });
+    // Toggle Settings
+    $('.toggle-settings').on('click', function() {
+      $(this).toggleClass('fa-spin')
+      $(this).parent().toggleClass("hide-settings");
+    });
 });
 
 
