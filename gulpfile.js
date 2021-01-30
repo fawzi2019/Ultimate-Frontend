@@ -2,10 +2,11 @@ var gulp = require('gulp')
 	  concat = require('gulp-concat'),
 	  prefix = require('gulp-autoprefixer'),
 	  sass = require('gulp-sass'),
-	  pug = require('gulp-pug')
-	  livereload = require('gulp-livereload')
-    sourcemaps = require('gulp-sourcemaps')
+	  pug = require('gulp-pug'),
+	  livereload = require('gulp-livereload'),
+    sourcemaps = require('gulp-sourcemaps'),
     minify = require('gulp-minify');
+    // image = require('gulp-image');
 
 
  //*Your First Task
@@ -51,6 +52,13 @@ gulp.task('js', function () {
   		 .pipe(gulp.dest('dist/js'))
   		 .pipe(livereload());
 });
+
+// Images
+// gulp.task('image', function () {
+//   return gulp.src('stage/img/*.jpg')
+//   .pipe(image())
+//    .pipe(gulp.dest('./dest'));
+//    .pipe(livereload());
 
 //Watch task
 gulp.task('watch', function () {

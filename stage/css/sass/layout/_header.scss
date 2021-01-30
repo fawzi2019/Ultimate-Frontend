@@ -36,7 +36,7 @@
 
 			}
 			.noti-head {
-				background-color: #333;
+				background-color: #A8420F;
 				padding: 15px;
 				color: #fff;
 				font-weight: bold;
@@ -92,7 +92,59 @@
 			}
 
 
+
 		}
+
 		
+	}
+	.usermenu-container {
+		float: right;
+		.username {
+			cursor: pointer;
+			.avatar {
+				width: 40px;
+				height: 40px;
+
+			}
+			.user {
+				font-weight: bold;
+				color: #777;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+		}
+		.dropdown-menu {
+			min-width: 600px;
+			padding: 20px;
+			// left: -25px !important;
+		    top: 10px !important;
+			border: none;
+			border: 1px solid #3234F5;
+			&:before {
+				content: '';
+				position: absolute;
+				top: -20px;
+                right: 100px;
+				border-style: solid;
+				border-width: 10px;
+				// border-color: #F00 #080 #00F #FF0;
+				border-color: transparent transparent #3234F5 transparent; 
+			}
+			.user-info {
+				font-weight: bold;
+				color: #3234F5;
+			}
+			.activities-list {
+				color: #0DA31A;
+			}
+			.mega-links {
+				.link-box {
+					color: #C1731F;
+					padding: 10px;
+					border-radius: 6px;
+				}
+
+			}
+		}
 	}
 }
