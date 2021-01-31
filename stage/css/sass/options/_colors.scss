@@ -1,0 +1,14 @@
+$Themes: (
+   /* WILD CARIBBEAN */GREEN-theme: (color: #1dd1a1),
+    /*NASUPURPLE */blue-theme: (color: #5f27cd),
+    BLUEBELL-theme: (color: #341f97),
+    /*PASTEL*/ RED-theme: (color: #ff6b6b) 
+);
+
+@each $theme, $map in $themes {
+    .#{theme} {
+        .classname {
+            color: map-get($map, color );
+        }
+    }
+}
