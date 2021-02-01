@@ -13,6 +13,9 @@
 	}
     .toggle-sidebar {
 		cursor: pointer;
+		&:hover {
+			color: #1e7e34;
+		}
 	}
 	.notifications-container {
 		display: inline-block;
@@ -135,7 +138,7 @@
 				color: #3234F5;
 			}
 			.activities-list {
-				color: #0DA31A;
+				color: #1e7e34;
 			}
 			.mega-links {
 				.link-box {
