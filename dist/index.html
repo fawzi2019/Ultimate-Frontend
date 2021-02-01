@@ -11,16 +11,24 @@
   </head>
   <body>
     <div class="page home-page">
-      <div class="settings-box hide-settings"><i class="fa fa-gear fa-lg toggle-settings"></i>
+      <div class="settings-box hide-settings">
+        <div class="toggle-settings"><i class="fa fa-gear fa-lg"></i></div>
         <div class="settings-content">
-          <div class="option-box">
-            <h4>Color Option</h4>
+          <div class="option-box color-options text-center">
+            <h4 class="option-title">Color Options</h4>
+            <ul class="list-unstyled">
+              <li data-theme="GREEN-theme"></li>
+              <li data-theme="blue-theme"></li>
+              <li data-theme="BLUEBELL-theme"></li>
+              <li data-theme="RED-theme"></li>
+              <li data-theme="Pink-theme"></li>
+            </ul>
           </div>
           <div class="option-box">
-            <h4>Font Option</h4>
+            <h4 class="option-title">Font Option</h4>
           </div>
           <div class="option-box">
-            <h4>Sidebar Option</h4>
+            <h4 class="option-title">Sidebar Option</h4>
           </div>
         </div>
       </div>
@@ -105,5 +113,6 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main-min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

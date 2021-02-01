@@ -24,8 +24,29 @@ $(function() {
     });
     // Toggle Settings
     $('.toggle-settings').on('click', function() {
-      $(this).toggleClass('fa-spin')
-      $(this).parent().toggleClass("hide-settings");
+      $(this)
+      .find("i")
+      .toggleClass('fa-spin')
+      $(this)
+      .parent()
+      .toggleClass("hide-settings");
+    });
+    // Switch Colors Theme
+    var themesClasses = [];
+    $('.color-options li').each(function() {
+      themesClasses.push($(this).data('theme'));
+    });
+    // console.log(themesClasses);
+    $('.color-options li').on('click', function() {
+      // console.log($(this).data('theme'));
+      $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+      $("body")
+      // .removeClass("GREEN-theme blue-theme BLUEBELL-theme RED-theme Pink-theme")
+      .removeClass(themesClasses.join(" "))
+      .addClass($(this).data('theme'));
     });
 });
 

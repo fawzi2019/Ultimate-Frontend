@@ -1,10 +1,14 @@
 .settings-box.hide-settings
-  .toggle-sttings
+  .toggle-settings
     i.fa.fa-gear.fa-lg
   .settings-content
+    .option-box.color-options.text-center
+      h4.option-title Color Options
+      - var themes = ["GREEN-theme", "blue-theme", "BLUEBELL-theme", "RED-theme", "Pink-theme" ]
+      ul.list-unstyled
+        each theme in themes
+          li(data-theme=theme)
     .option-box
-      h4 Color Option
+      h4.option-title Font Option
     .option-box
-      h4 Font Option
-    .option-box
-      h4 Sidebar Option
+      h4.option-title Sidebar Option

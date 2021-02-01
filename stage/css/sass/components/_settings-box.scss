@@ -8,9 +8,14 @@
   z-index: 1000;
   padding: 20px;
   transition: .3s;
+  .option-title {
+    font-weight: bold;
+    color: #666;
+    margin: 10px 0 15px;
+  }
   .toggle-settings {
       position: absolute;
-      left: -55px;
+      left: -50px;
       top: 100px;
       background-color: #FFF;
       padding: 10px 15px;
@@ -21,4 +26,26 @@
   &.hide-settings {
       right: -250px;
   }
+  .color-options {
+    ul {
+      $colors: #1dd1a1, #5f27cd, #341f97, #ff6b6b, #f368e0;
+        @for $i from 1 through length($colors) {
+          li:nth-child(#{$i}) {
+            background-color: nth($colors, $i );
+          }
+        }
+        li {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          opacity: .7;
+          cursor: pointer;
+          display: inline-block;
+          &.active {
+            opacity: 1;
+          }
+        }
+    }
+  }
+
 }

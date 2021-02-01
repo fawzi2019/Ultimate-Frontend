@@ -17,4 +17,14 @@ body {
             width: 100%;
         }
     }
+    .page-head {
+        margin-top: 30px;
+        padding: 20px;
+        .page-title {
+            font-weight: bold;
+           // color: #576574;/*This Is  Default Color FUEL TOWN */
+           color: #01a3a4;/*This Is  Default Color AQUA VELVET */
+        }
+        .page-description {}
+    }
 }
