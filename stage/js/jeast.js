@@ -48,6 +48,17 @@ $(function() {
       .removeClass(themesClasses.join(" "))
       .addClass($(this).data('theme'));
     });
+    //Switch Fonts Options
+    var fontClasses = [];
+    $('.font-options select option').each(function() {
+      fontClasses.push($(this).val());
+    });
+    // console.log(fontClasses);
+    $('.font-options select').on('change', function() {
+      $("body").removeClass(fontClasses.join(" "))
+      .addClass($(this).find("option:selected").val());
+      // console.log($(this).find('option:selected').val());
+    });
 });
 
 
