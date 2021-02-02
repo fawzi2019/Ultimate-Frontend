@@ -43,5 +43,11 @@ $themes: (
         .header .usermenu-container .dropdown-menu .activities-list {
             color: /*map-get($map, color )*/$color;
         }
+        .page .sidebar .links-area>li>a.active {
+            color: /*map-get($map, color )*/$color;
+        }
+        .page .sidebar .links-area>li>a.active:before:hover {
+            color: $color;
+        }
     }
 }
